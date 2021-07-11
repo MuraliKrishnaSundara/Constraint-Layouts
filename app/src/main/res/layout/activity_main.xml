@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/vBlackBG"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#313236" />
+
+    <TextView
+        android:id="@+id/tvSmoking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/back"
+        android:drawableRight="@drawable/house"
+        android:drawablePadding="25dp"
+        android:text="Smoking"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCigarette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vBlackBG"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cigarette" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="200dp"
+            android:drawableRight="@drawable/share" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/vRedLine"
+        android:layout_width="2dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/cvCigarette"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#E81010" />
+
+    <TextView
+        android:id="@+id/tvHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvCigarette"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/vRedLine"
+        android:text="Punjab 1st in India to Ban Cigarette"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeadline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:text="Your smoke is also bad for other people - they breathe in your smoke secondhand and can get many of the same problems as smokers do. This includes heart disease and lung cancer. Children exposed to secondhand smoke have a higher risk of ear infections, colds, pneumonia, bronchitis, and more severe asthma. Mothers who breathe secondhand smoke while pregnant are more likely to have preterm labor and babies with low birth weight."
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/vBottomBlackBG"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#313236" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Published at 12:00 pm"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
