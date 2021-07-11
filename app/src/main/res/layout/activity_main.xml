@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/vBlueView1"
+        style="@style/customEditText3"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vBlueView2"
+        style="@style/customEditText3"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWhatTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:drawableLeft="@drawable/back"
+        android:drawablePadding="@dimen/dimen_30"
+        android:text="@string/what_topic_do_you_love"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/dimen_23_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBooks"
+        style="@style/customEditText1"
+        android:layout_below="@id/vBlueView1"
+        android:text="@string/books"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tvPodcasts"
+        style="@style/customEditText1"
+        android:layout_below="@id/vBlueView1"
+        android:layout_alignParentRight="true"
+        android:text="@string/podcasts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tvNews"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvBooks"
+        android:text="@string/news"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBooks" />
+
+    <TextView
+        android:id="@+id/tvBusiness"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvBooks"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/business"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvPodcasts" />
+
+    <TextView
+        android:id="@+id/tvEntertainment"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvNews"
+        android:text="@string/entertainment"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNews" />
+
+    <TextView
+        android:id="@+id/tvSports"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvNews"
+        android:layout_alignParentRight="true"
+        android:text="@string/sports"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvBusiness" />
+
+    <TextView
+        android:id="@+id/tvTechnology"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvEntertainment"
+        android:text="@string/technology"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEntertainment" />
+
+    <TextView
+        android:id="@+id/tvPronunciation"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvEntertainment"
+        android:layout_alignParentRight="true"
+        android:text="@string/pronunciation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvSports" />
+
+    <TextView
+        android:id="@+id/tvGrammer"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvTechnology"
+        android:text="@string/grammar"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTechnology" />
+
+    <TextView
+        android:id="@+id/tvHealth"
+        style="@style/customEditText1"
+        android:layout_below="@id/tvTechnology"
+        android:layout_alignParentRight="true"
+        android:text="@string/health"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvPronunciation" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/dimen_210"
+        android:layout_height="@dimen/dimen_45"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_1"
+        android:text="@string/continue_btn"
+        android:textAllCaps="false"
+        android:textColor="#0583EA"
+        android:textSize="@dimen/dimen_18_sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vBlueView2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="195dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="85dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="646dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
